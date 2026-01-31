@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-white px-4">
+<nav class="navbar navbar-expand-lg navbar-light bg-white px-4">
   <div class="container-fluid">
     <!-- Logo -->
     <a class="navbar-brand" href="#">
@@ -19,16 +19,16 @@
     <div class="collapse navbar-collapse" id="mainNavbar">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link fw-semibold" routerLink="/">HOME</a>
+          <a class="nav-link fw-semibold" routerLink="/" (click)="closeNavbar()">HOME</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link fw-semibold" routerLink="/about">ABOUT US</a>
+          <a class="nav-link fw-semibold" routerLink="/about" (click)="closeNavbar()">ABOUT US</a>
         </li>
 
         
         <li class="nav-item">
-          <a class="nav-link fw-semibold" routerLink="/course-and-curriculum">Course And Curriculum</a>
+          <a class="nav-link fw-semibold" routerLink="/course-and-curriculum" (click)="closeNavbar()">Course And Curriculum</a>
         </li>
         <!-- SECTION Dropdown -->
         <li class="nav-item dropdown">
@@ -37,21 +37,21 @@
           </a>
           <ul class="dropdown-menu">
             <li>
-              <a class="dropdown-item" routerLink="/facilities/science-lab"
+              <a class="dropdown-item" (click)="closeNavbar()" routerLink="/facilities/science-lab"
                 >Science Lab</a
               >
             </li>
             <li>
-              <a class="dropdown-item" routerLink="/facilities/computer-lab"
+              <a class="dropdown-item" (click)="closeNavbar()" routerLink="/facilities/computer-lab"
                 >Computer Lab</a
               >
             </li>
             <li>
-              <a class="dropdown-item" routerLink="/facilities/library">Library</a>
+              <a class="dropdown-item" (click)="closeNavbar()" routerLink="/facilities/library">Library</a>
             </li>
 
             <li>
-              <a class="dropdown-item" routerLink="/facilities/sports-facilities"
+              <a class="dropdown-item" (click)="closeNavbar()" routerLink="/facilities/sports-facilities"
                 >Sports Facilities</a
               >
             </li>
@@ -61,16 +61,16 @@
         </li>
 
          <li class="nav-item">
-          <a class="nav-link fw-semibold" routerLink="/achievements">Achievements</a>
+          <a class="nav-link fw-semibold" href="assets/files/achievements.pdf" target="_blank" (click)="closeNavbar()">Achievements</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link fw-semibold" routerLink="/admissions">Admissions</a>
+          <a class="nav-link fw-semibold" routerLink="/admissions" (click)="closeNavbar()">Admissions</a>
         </li>
          <li class="nav-item">
-          <a class="nav-link fw-semibold" routerLink="/gallery">Gallery</a>
+          <a class="nav-link fw-semibold" routerLink="/gallery" (click)="closeNavbar()">Gallery</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link fw-semibold" routerLink="/contact-us">Contact Us</a>
+          <a class="nav-link fw-semibold" routerLink="/contact-us" (click)="closeNavbar()">Contact Us</a>
         </li>
       </ul>
     </div>
