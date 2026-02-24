@@ -1,9 +1,7 @@
 /* Main navbar */
 .navbar {
-  
   padding: 10px 40px;
-  background: #fff;
- 
+  background: linear-gradient(120deg, #f4f4f5, #f1edef, #f3f0f2);
 }
 
 /* Logo area */
@@ -62,7 +60,7 @@
   left: 0;
   background: #fff;
   min-width: 200px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   display: none;
   flex-direction: column;
   z-index: 1000;

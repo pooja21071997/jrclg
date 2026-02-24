@@ -1,0 +1,57 @@
+.lab-section {
+  background: linear-gradient(135deg, #eef2f7, #f8e6f1);
+}
+
+/* Card */
+.lab-card {
+  background: #ffffff;
+  border-radius: 25px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  transition: 0.4s ease;
+}
+
+.lab-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Title */
+.lab-title {
+  font-weight: 700;
+  font-size: 2rem;
+  color: #2c2c54;
+}
+
+.lab-title span {
+  background: linear-gradient(90deg, #6c63ff, #e84393);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Animated Line */
+.lab-line {
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #2c2c54, #e84393);
+  border-radius: 5px;
+  transition: width 0.4s ease;
+}
+
+.lab-card:hover .lab-line {
+  width: 120px;
+}
+
+/* Text */
+.lab-text {
+  color: #555;
+  line-height: 1.9;
+  font-size: 16px;
+}
+
+/* Image */
+.lab-img {
+  transition: 0.4s ease;
+}
+
+.lab-img:hover {
+  transform: scale(1.05);
+}

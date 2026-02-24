@@ -1,0 +1,330 @@
+.about-page-section {
+  background: linear-gradient(135deg, #eef2f7, #f8e6f1);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Decorative Circles */
+.about-page-section::before {
+  content: "";
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 250px;
+  height: 250px;
+  background: rgba(232, 67, 147, 0.15);
+  border-radius: 50%;
+}
+
+.about-page-section::after {
+  content: "";
+  position: absolute;
+  bottom: -80px;
+  left: -80px;
+  width: 250px;
+  height: 250px;
+  background: rgba(108, 99, 255, 0.15);
+  border-radius: 50%;
+}
+
+/* Card */
+.about-page-card {
+  background: #ffffff;
+  border-radius: 25px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* Subtitle */
+.about-page-subtitle {
+  letter-spacing: 2px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #6c63ff;
+}
+
+/* Title */
+.about-page-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2c2c54;
+}
+
+.about-page-title span {
+  background: linear-gradient(90deg, #6c63ff, #e84393);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Line */
+.about-page-line {
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #6c63ff, #e84393);
+  border-radius: 5px;
+}
+
+/* Text */
+.about-page-text {
+  color: #555;
+  line-height: 1.9;
+  font-size: 15px;
+}
+
+/* Image Hover */
+.about-page-img {
+  transition: 0.4s ease;
+}
+
+.about-page-img:hover {
+  transform: scale(1.03);
+}
+
+/* Section Background - Light Academic */
+.inspiration-section {
+  background: linear-gradient(135deg, #eef2ff, #fdf2f8);
+  position: relative;
+  overflow: hidden;
+  padding: 80px 0;
+}
+
+/* Soft Decorative Light Shape */
+.inspiration-section::before {
+  content: "";
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  background: rgba(30, 60, 114, 0.08);
+  border-radius: 50%;
+  top: -80px;
+  right: -80px;
+  animation: floatLight 6s infinite alternate ease-in-out;
+}
+
+@keyframes floatLight {
+  from { transform: translateY(0px); }
+  to { transform: translateY(20px); }
+}
+
+/* Quote Card */
+.quote-card {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  padding: 50px;
+  border-radius: 25px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  animation: fadeUp 1s ease-in-out;
+}
+
+/* Quote Icon */
+.quote-icon {
+  font-size: 60px;
+  margin-bottom: 20px;
+
+  background: linear-gradient(90deg, #1e3c72, #ff4da6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Gradient Quote Text */
+.quote-text {
+  font-size: 26px;
+  font-style: italic;
+  line-height: 1.8;
+
+  background: linear-gradient(90deg, #1e3c72, #ff4da6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Gradient Author Name */
+.quote-author {
+  margin-top: 25px;
+  font-weight: 600;
+  font-size: 18px;
+
+  background: linear-gradient(90deg, #ff4da6, #1e3c72);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Founder Image */
+.founder-image-wrapper {
+  overflow: hidden;
+  border-radius: 25px;
+}
+
+.founder-img {
+  border-radius: 25px;
+  transition: transform 0.6s ease, box-shadow 0.6s ease;
+  max-height: 550px;
+  object-fit: cover;
+}
+
+.founder-image-wrapper:hover .founder-img {
+  transform: scale(1.05);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+}
+
+/* Fade Animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.principal-section {
+  background: linear-gradient(135deg, #eef2f7, #f8e6f1);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Decorative Circles */
+.principal-section::before {
+  content: "";
+  position: absolute;
+  top: -70px;
+  left: -70px;
+  width: 220px;
+  height: 220px;
+  background: rgba(108, 99, 255, 0.15);
+  border-radius: 50%;
+}
+
+.principal-section::after {
+  content: "";
+  position: absolute;
+  bottom: -70px;
+  right: -70px;
+  width: 250px;
+  height: 250px;
+  background: rgba(232, 67, 147, 0.15);
+  border-radius: 50%;
+}
+
+/* Card */
+.principal-card {
+  background: #ffffff;
+  border-radius: 25px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* Subtitle */
+.principal-subtitle {
+  letter-spacing: 2px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #6c63ff;
+}
+
+/* Title */
+.principal-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2c2c54;
+}
+
+.principal-title span {
+  background: linear-gradient(90deg, #6c63ff, #e84393);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Line */
+.principal-line {
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #6c63ff, #e84393);
+  border-radius: 5px;
+}
+
+/* Text */
+.principal-text {
+  color: #555;
+  line-height: 1.9;
+  font-size: 15px;
+}
+
+/* Image */
+.principal-img {
+  transition: 0.4s ease;
+}
+
+.principal-img:hover {
+  transform: scale(1.03);
+}
+
+.timing-section {
+  background: linear-gradient(135deg, #eef2f7, #f8e6f1);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Heading */
+.timing-subtitle {
+  letter-spacing: 2px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #6c63ff;
+}
+
+.timing-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2c2c54;
+}
+
+.timing-title span {
+  background: linear-gradient(90deg, #6c63ff, #e84393);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.timing-line {
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #6c63ff, #e84393);
+  border-radius: 5px;
+}
+
+/* Card */
+.timing-card {
+  max-width: 700px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* Table */
+.timing-table thead {
+  background: linear-gradient(90deg, #2c2c54, #e84393);
+  color: #ffffff;
+}
+
+.timing-table th,
+.timing-table td {
+  padding: 15px;
+  font-size: 15px;
+}
+
+.timing-table tbody tr {
+  transition: 0.3s ease;
+}
+
+.timing-table tbody tr:hover {
+  background-color: rgba(232, 67, 147, 0.08);
+}
+
+.about-page-title:hover + .about-page-line {
+  width: 180px;
+}
+.principal-title:hover + .principal-line {
+  width: 180px;
+}
+.timing-title:hover + .timing-line {
+  width: 180px;
+}

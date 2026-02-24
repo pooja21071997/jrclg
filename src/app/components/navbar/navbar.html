@@ -2,7 +2,7 @@
   <div class="container-fluid">
     <!-- Logo -->
     <a class="navbar-brand" href="#">
-      <img src="assets/images/navbar.png" height="70" class="no-hover"/>
+      <img src="assets/images/navbar.png" height="70" class="no-hover" />
     </a>
 
     <!-- Hamburger button -->
@@ -19,16 +19,34 @@
     <div class="collapse navbar-collapse" id="mainNavbar">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link fw-semibold" routerLink="/"  [routerLinkActiveOptions]="{ exact: true }" (click)="closeNavbar()" routerLinkActive="active">HOME</a>
+          <a
+            class="nav-link fw-semibold"
+            routerLink="/"
+            [routerLinkActiveOptions]="{ exact: true }"
+            (click)="closeNavbar()"
+            routerLinkActive="active"
+            >HOME</a
+          >
         </li>
 
         <li class="nav-item">
-          <a class="nav-link fw-semibold" routerLink="/about" (click)="closeNavbar()" routerLinkActive="active">ABOUT US</a>
+          <a
+            class="nav-link fw-semibold"
+            routerLink="/about"
+            (click)="closeNavbar()"
+            routerLinkActive="active"
+            >ABOUT US</a
+          >
         </li>
 
-        
         <li class="nav-item">
-          <a class="nav-link fw-semibold" routerLink="/course-and-curriculum" (click)="closeNavbar()" routerLinkActive="active">Course And Curriculum</a>
+          <a
+            class="nav-link fw-semibold"
+            routerLink="/course-and-curriculum"
+            (click)="closeNavbar()"
+            routerLinkActive="active"
+            >Course And Curriculum</a
+          >
         </li>
         <!-- SECTION Dropdown -->
         <li class="nav-item dropdown">
@@ -37,44 +55,87 @@
           </a>
           <ul class="dropdown-menu">
             <li>
-              <a class="dropdown-item" (click)="closeNavbar()" routerLinkActive="active" routerLink="/facilities/science-lab"
+              <a
+                class="dropdown-item"
+                (click)="closeNavbar()"
+                routerLinkActive="active"
+                routerLink="/facilities/science-lab"
                 >Science Lab</a
               >
             </li>
             <li>
-              <a class="dropdown-item" (click)="closeNavbar()" routerLinkActive="active" routerLink="/facilities/computer-lab"
+              <a
+                class="dropdown-item"
+                (click)="closeNavbar()"
+                routerLinkActive="active"
+                routerLink="/facilities/computer-lab"
                 >Computer Lab</a
               >
             </li>
             <li>
-              <a class="dropdown-item" (click)="closeNavbar()" routerLinkActive="active" routerLink="/facilities/library">Library</a>
+              <a
+                class="dropdown-item"
+                (click)="closeNavbar()"
+                routerLinkActive="active"
+                routerLink="/facilities/library"
+                >Library</a
+              >
             </li>
 
             <li>
-              <a class="dropdown-item" (click)="closeNavbar()" routerLinkActive="active" routerLink="/facilities/sports-facilities"
+              <a
+                class="dropdown-item"
+                (click)="closeNavbar()"
+                routerLinkActive="active"
+                routerLink="/facilities/sports-facilities"
                 >Sports Facilities</a
               >
             </li>
-           
-            
           </ul>
         </li>
 
-         <li class="nav-item">
-          <a class="nav-link fw-semibold" href="assets/files/achievements.pdf" target="_blank" (click)="closeNavbar()" routerLinkActive="active">Achievements</a>
+        <li class="nav-item">
+          <a
+            class="nav-link fw-semibold"
+            href="assets/files/achievements.pdf"
+            target="_blank"
+            (click)="closeNavbar()"
+            routerLinkActive="active"
+            >Achievements</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link fw-semibold" routerLink="/admissions" (click)="closeNavbar()" routerLinkActive="active">Admissions</a>
-        </li>
-         <li class="nav-item">
-          <a class="nav-link fw-semibold" routerLink="/gallery" (click)="closeNavbar()" routerLinkActive="active">Gallery</a>
+          <a
+            class="nav-link fw-semibold"
+            routerLink="/admissions"
+            (click)="closeNavbar()"
+            routerLinkActive="active"
+            >Admissions</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link fw-semibold" routerLink="/contact-us" (click)="closeNavbar()" routerLinkActive="active">Contact Us</a>
+          <a
+            class="nav-link fw-semibold"
+            routerLink="/gallery"
+            (click)="closeNavbar()"
+            routerLinkActive="active"
+            >Gallery</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link fw-semibold"
+            routerLink="/contact-us"
+            (click)="closeNavbar()"
+            routerLinkActive="active"
+            >Contact Us</a
+          >
         </li>
       </ul>
     </div>
   </div>
 </nav>
 
-<div class="bg-warning" style="height: 4px"></div>
+<div
+  style="height: 4px; background: linear-gradient(90deg, #f744a0 0%, #b016d2 50%, #15025c 100%)"
+></div>

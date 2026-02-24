@@ -1,12 +1,12 @@
 .contact-box {
-  background: #ffa500;
+  background: #d0defd;
 }
 
 .icon-circle {
   width: 45px;
   height: 45px;
   background: #fff;
-  color: #000;
+  color: #fff;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -15,6 +15,107 @@
 }
 
 iframe {
-  min-height: 100%;
+  max-height: 100%;
 }
 
+.contact-section {
+  animation: fadeUp 1.2s ease forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.glass-card {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(18px);
+  border-radius: 24px;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.15);
+  border: 1px solid rgba(255,255,255,0.4);
+  position: relative;
+  z-index: 2;
+  transition: all 0.6s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 40px 100px rgba(13,110,253,0.35);
+}
+.icon-circle {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #085564;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.2rem;
+  box-shadow: 0 12px 30px rgba(13,110,253,0.45);
+  animation: pulseGlow 3s infinite;
+  flex-shrink: 0;
+}
+
+@keyframes pulseGlow {
+  0%,100% { box-shadow: 0 0 0 rgba(13,110,253,0); }
+  50% { box-shadow: 0 0 30px rgba(13,110,253,0.6); }
+}
+.contact-item {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding: 10px;
+  border-radius: 14px;
+  transition: all 0.4s ease;
+}
+
+.contact-item:hover {
+  background: linear-gradient(
+    120deg,
+    rgba(13,110,253,0.08),
+    rgba(104, 103, 102, 0.08)
+  );
+  transform: translateX(8px);
+}
+.map-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0 24px 24px 0;
+}
+
+.map-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 420px;
+  border: 0;
+  /* transition: transform 1.2s ease; */
+}
+
+.map-wrapper:hover iframe {
+  /* transform: scale(1.08); */
+}
+.map-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    rgba(13,110,253,0.25),
+    rgba(0,0,0,0.1)
+  );
+  z-index: 1;
+  pointer-events: none;
+}
+.contact-wrapper {
+  animation: floatBlock 8s ease-in-out infinite;
+}
+
+@keyframes floatBlock {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
